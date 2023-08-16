@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FoodService } from '../services/food/food.service';
 import { Foods } from '../shared/models/food';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -11,6 +12,6 @@ export class HomeComponent implements OnInit {
   constructor(private fs: FoodService) {}
   ngOnInit(): void {
     this.foods = this.fs.getAll();
-    console.log(this.foods);
+    // console.log(this.foods);
   }
 }
