@@ -1,1 +1,1 @@
-# Food Ordring App 🛒
+# Food Ordering App 🛒
