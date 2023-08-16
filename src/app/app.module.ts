@@ -10,8 +10,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import { RatingModule } from 'ng-starrating';
 import { RatingModule } from '@khajegan/ng-starrating';
 import { RatingComponent } from './rating/rating.component';
+import { SearchComponent } from './search/search.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, RatingComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, RatingComponent, SearchComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
