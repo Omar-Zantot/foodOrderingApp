@@ -94,7 +94,7 @@ export class FoodService {
         name: 'Vegetables Magento Pizza',
         price: 9,
         cookTime: '45-50',
-        favorite: false,
+        favorite: true,
         origins: ['indian'],
         stars: 5,
         imageUrl: 'assets/food-8.jpg',
@@ -120,5 +120,9 @@ export class FoodService {
       { name: 'Fry', count: 1 },
       { name: 'Soup', count: 1 },
     ];
+  }
+
+  getFoodById(id: number): Foods {
+    return this.getAll().find((food) => food.id == id)!;
   }
 }

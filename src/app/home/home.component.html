@@ -2,7 +2,10 @@
 <app-tags></app-tags>
 <ul class="d-flex justify-content-center align-items-center flex-wrap">
   <li *ngFor="let food of foods">
-    <a href="" class="d-flex flex-column overflow-hidden text-decoration-none">
+    <a
+      routerLink="/food/{{ food.id }}"
+      class="d-flex flex-column overflow-hidden text-decoration-none"
+    >
       <img src="{{ food.imageUrl }}" alt="food img" />
       <div class="content">
         <div class="name">
@@ -12,11 +15,6 @@
           <i class="fa-solid fa-heart"></i>
         </span>
         <div class="stars">
-          <!-- <star-rating [value]="food.stars" [totalstars]="5" checkedcolor="red" uncheckedcolor="black" size="22px"
-           >
-          </star-rating> -->
-          <!-- <ngb-rating [max]="5" [(rate)]="starRating" [readonly]="false"></ngb-rating> -->
-
           <app-rating [food]="food"></app-rating>
         </div>
         <div

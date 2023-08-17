@@ -12,8 +12,10 @@ import { RatingModule } from '@khajegan/ng-starrating';
 import { RatingComponent } from './rating/rating.component';
 import { SearchComponent } from './search/search.component';
 import { TagsComponent } from './tags/tags.component';
+import { CartComponent } from './cart/cart.component';
+import { FoodPageComponent } from './food-page/food-page.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, RatingComponent, SearchComponent, TagsComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, RatingComponent, SearchComponent, TagsComponent, CartComponent, FoodPageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
